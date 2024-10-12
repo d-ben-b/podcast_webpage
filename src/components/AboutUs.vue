@@ -3,7 +3,8 @@
 <template>
   <div class="about-us">
     <h1>About Us</h1>
-    <div class="slideshow-container" @wheel="onWheel">
+    <div class="slideshow-container">
+      <button @click="slideshow">Hit me</button>
       <TransitionGroup name="switch" tag="div">
         <profile
           v-for="(person, index) in team"
@@ -33,23 +34,24 @@
   export default {
     name: "AboutUs",
     components: {
-      profile,
+      profile: profile,
     },
     data() {
       return {
+        currentIndex: 0,
         team: [
           {
-            picture_url: "https://via.placeholder.com/150",
+            picture_url: "https://via.placeholder.com/100",
             name: "Podcast Team",
             desc: "We are passionate about bringing you the best content.",
           },
           {
-            picture_url: "https://via.placeholder.com/150",
+            picture_url: "https://via.placeholder.com/110",
             name: "Podcast Team",
             desc: "We are passionate about bringing you the best content.",
           },
           {
-            picture_url: "https://via.placeholder.com/150",
+            picture_url: "https://via.placeholder.com/120",
             name: "Podcast Team",
             desc: "We are passionate about bringing you the best content.",
           },
@@ -57,7 +59,12 @@
       };
     },
     methods() {
-      return {};
+      return {
+        slideshow() {
+          this.currentIndex = (this.currentIndex + 1) % this.team.length;
+          console.log(this.currentIndex);
+        },
+      };
     },
   };
 </script>
