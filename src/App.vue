@@ -12,6 +12,7 @@
   <!-- <transition name="page-change" mode="out-in">
     <component :is="activeComp" :key="activeComp" />
   </transition> -->
+  <div>hi123</div>
   <component :is="activeComp" :key="activeComp" />
 </template>
 
