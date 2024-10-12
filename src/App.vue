@@ -10,9 +10,10 @@
   </div>
 
   <!-- 使用 v-slot 和 transition 來處理平滑過渡 -->
-  <transition name="page-change" mode="out-in">
+  <!-- <transition name="page-change" mode="out-in">
     <component :is="activeComp" />
-  </transition>
+  </transition> -->
+  <component :is="activeComp" />
 </template>
 
 <script>
