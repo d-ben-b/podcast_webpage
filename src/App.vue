@@ -3,7 +3,7 @@
 <template>
   <div class="topnavi">
     <button class="naviButton" @click="activeComp = 'home'">Home</button>
-    <button class="naviButton" @click="activeComp = 'about- us'">
+    <button class="naviButton" @click="activeComp = 'about-us'">
       About Us
     </button>
     <button class="naviButton" @click="activeComp = 'podcast'">podcast</button>
