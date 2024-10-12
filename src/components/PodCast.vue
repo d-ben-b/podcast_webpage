@@ -19,7 +19,7 @@
 </template>
 
 <script>
-  import Textarea from "../TextArea.vue";
+  import Textarea from "./TextArea.vue";
   import PaperPlane from "./PaperPlane.vue";
 
   export default {

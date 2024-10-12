@@ -2,22 +2,27 @@
 
 <template>
   <div class="topnavi">
-    <router-link class="naviButton" to="/home">Home</router-link><br />
-    <router-link class="naviButton" to="/about-us">About Us</router-link><br />
-    <router-link class="naviButton" to="/podcast">Podcast</router-link><br />
+    <button class="naviButton" @click="activeComp = 'home'">Home</button>
+    <button class="naviButton" @click="activeComp = 'about- us'">
+      About Us
+    </button>
+    <button class="naviButton" @click="activeComp = 'podcast'">podcast</button>
   </div>
 
   <!-- 使用 v-slot 和 transition 來處理平滑過渡 -->
-  <router-view v-slot="{ Component }">
-    <transition name="page-change" mode="out-in">
-      <component :is="Component" />
-    </transition>
-  </router-view>
+  <transition name="page-change" mode="out-in">
+    <component :is="activeComp" />
+  </transition>
 </template>
 
 <script>
   export default {
     name: "App",
+    data() {
+      return {
+        activeComp: "home",
+      };
+    },
   };
 </script>
 
