@@ -1,6 +1,7 @@
 /** @format */
 
 import { createApp } from "vue";
+
 import App from "./App.vue";
 import AboutUs from "./components/AboutUs.vue";
 import PodCast from "./components/PodCast.vue";

@@ -9,9 +9,10 @@
     <button class="naviButton" @click="activeComp = 'podcast'">podcast</button>
   </div>
 
-  <transition name="page-change" mode="out-in">
-    <component :is="activeComp" />
-  </transition>
+  <!-- <transition name="page-change" mode="out-in">
+    <component :is="activeComp" :key="activeComp" />
+  </transition> -->
+  <component :is="activeComp" :key="activeComp" />
 </template>
 
 <script>
