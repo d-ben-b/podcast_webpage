@@ -1,10 +1,12 @@
 <!-- @format -->
 
 <template>
-  <div class="container" v-show="true">
-    <img :src="picture_url" alt="" />
-    <div class="name">{{ name }}</div>
-    <div class="desc">{{ desc }}</div>
+  <div class="profile-container">
+    <img :src="picture_url" alt="" class="profile-image" />
+    <div class="profile-info">
+      <h3>{{ name }}</h3>
+      <p>{{ desc }}</p>
+    </div>
   </div>
 </template>
 
@@ -15,16 +17,47 @@
       picture_url: {
         type: String,
         required: true,
-        default: "https://via.placeholder.com/150",
       },
-      desc: {
+      name: {
         type: String,
         required: true,
       },
-      name: {
+      desc: {
         type: String,
         required: true,
       },
     },
   };
 </script>
+
+<style scoped>
+  .profile-container {
+    display: flex;
+    border: 5px solid #ffffff; /* 邊框樣式 */
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* 陰影效果 */
+    text-align: center;
+    width: 60%; /* 根據需要調整寬度 */
+    height: 250px; /* 根據需要調整高度 */
+  }
+
+  .profile-image {
+    width: 150px;
+    border-radius: 10px; /* 圖片的圓角效果 */
+    margin-bottom: 10px;
+    margin-right: 15px;
+  }
+  .profile-info h3 {
+    font-size: 1.2em;
+    margin-top: 15px;
+    color: #6b4226;
+  }
+
+  .profile-info p {
+    color: #6b4226;
+    font-size: 0.9em;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+</style>
