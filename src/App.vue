@@ -26,9 +26,6 @@
 </script>
 
 <style scoped>
-  template {
-    color: #b5226e;
-  }
   /* 導航樣式 */
   .topnavi {
     display: flex;

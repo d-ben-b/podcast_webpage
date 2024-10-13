@@ -20,8 +20,10 @@
 
 <style scoped>
   .home {
+    padding: 20px;
+    height: 100vh;
     text-align: center;
-    margin-top: 50px;
+    background: #fffacd;
   }
 
   h1 {

@@ -45,13 +45,14 @@
           height: 80,
         },
         podcastStyle: {
-          backgroundColor: "#FFFACD", // 用引號包裹顏色值
-          textAlign: "center", // 用引號包裹文本對齊方式
-          margin: "0", // 用引號包裹邊距
-          minHeight: "100vh", // 用引號包裹視窗高度
-          height: "auto", // 用引號包裹自動高度
-          zIndex: 1, // zIndex 可以是數字
-          transition: "background-color 0.5s ease", // 平滑過渡背景顏色
+          backgroundColor: "#FFFACD",
+          textAlign: "center",
+          margin: "0",
+          minHeight: "100vh",
+          height: "auto",
+          zIndex: 1,
+          transition: "background-color 0.5s ease",
+          padding: "20px",
         },
       };
     },
