@@ -13,7 +13,7 @@
       :style="paperPlaneStyle" />
     <!-- 信箱圖標 -->
     <div ref="mailbox" class="mailbox">
-      <img src="./mailbox-icon.png" alt="Mailbox" />
+      <img src="/mailbox-icon.png" alt="Mailbox" />
     </div>
   </div>
 </template>
@@ -45,7 +45,7 @@
           height: 80,
         },
         podcastStyle: {
-          backgroundColor: "#360c0c", // 用引號包裹顏色值
+          backgroundColor: "#FFFACD", // 用引號包裹顏色值
           textAlign: "center", // 用引號包裹文本對齊方式
           margin: "0", // 用引號包裹邊距
           minHeight: "100vh", // 用引號包裹視窗高度
@@ -67,7 +67,7 @@
         this.paperPlaneStyle.top = `${
           event.clientY - this.paperPlaneSize.height / 2
         }px`;
-        this.podcastStyle.backgroundColor = "#b366ff";
+        this.podcastStyle.backgroundColor = "#FFE4B5";
       },
       handleMouseMove(event) {
         if (this.showPaperPlane && this.paperPlaneSize) {
@@ -94,7 +94,7 @@
           if (distance < 50) {
             // 如果飛機靠近信箱，則觸發投遞
             this.deliverPaperPlane();
-            this.podcastStyle.backgroundColor = "#360c0c"; // 回到原始背景色
+            this.podcastStyle.backgroundColor = "#FFFACD"; // 回到原始背景色
           }
         }
       },

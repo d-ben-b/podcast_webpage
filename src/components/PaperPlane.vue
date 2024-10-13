@@ -2,7 +2,7 @@
 
 <template>
   <div class="paper-plane">
-    <img src="./paper-plane-icon.png" alt="Paper Plane" />
+    <img src="/paper-plane-icon.png" alt="Paper Plane" />
   </div>
 </template>
 

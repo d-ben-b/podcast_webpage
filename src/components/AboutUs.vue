@@ -105,7 +105,7 @@
     backface-visibility: hidden; /* 隱藏背面 */
     transform-origin: center;
     border-radius: 10px; /* 圓角邊框 */
-    background-color: #ffffff; /* 背景色：白色 */
+    background-color: #fffacd; /* 背景色：白色 */
   }
 
   .carousel__item:nth-child(1) {
@@ -144,6 +144,7 @@
   .about-us {
     padding: 20px;
     text-align: center;
+    background: #fffacd;
   }
   .about-us h2 {
     font-size: 1.5em;

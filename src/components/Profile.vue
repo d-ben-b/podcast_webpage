@@ -40,6 +40,7 @@
     text-align: center;
     width: 60%; /* 根據需要調整寬度 */
     height: 250px; /* 根據需要調整高度 */
+    background: #ffc196;
   }
 
   .profile-image {
@@ -56,8 +57,9 @@
 
   .profile-info p {
     color: #6b4226;
-    font-size: 0.9em;
+    font-size: 1em;
     margin-left: 10px;
     margin-right: 10px;
+    font-family: "Noto Sans CJK TC", monospace;
   }
 </style>
